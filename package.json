@@ -1,0 +1,22 @@
+{
+  "name": "chch",
+  "version": "0.0.0",
+  "description": "FIXME",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dmitriiabramov/chch-clj.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dmitriiabramov/chch-clj/issues"
+  },
+  "homepage": "https://github.com/dmitriiabramov/chch-clj",
+  "dependencies": {
+    "async-require": "0.0.1"
+  }
+}
