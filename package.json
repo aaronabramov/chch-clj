@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/dmitriiabramov/chch-clj",
   "dependencies": {
-    "async-require": "0.0.2"
+    "async-require": "0.0.3"
   }
 }
