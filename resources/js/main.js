@@ -1,3 +1,2 @@
 //= require ./app.js
-
-exports.a = 'test';
+//= require ./router.js
