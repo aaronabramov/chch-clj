@@ -2,18 +2,28 @@
 
 FIXME
 
-## Prerequisites
+## Usage
+Launch the application by issuing one of the following commands:
 
-You will need [Leiningen][1] 1.7.0 or above installed.
+```shell
+lein run [host <host>] [port <port>]
+```
 
-[1]: https://github.com/technomancy/leiningen
+You can generate a standalone jar and run it:
 
-## Running
+```shell   
+lein uberjar
+java -jar target/chch-0.1.0-SNAPSHOT-standalone.jar
+```
 
-To start a web server for the application, run:
+You can also generate a war to deploy on a server like Tomcat, Jboss...
 
-    lein ring server
+```shell
+lein ring uberwar
+```
 
 ## License
 
 Copyright © 2014 FIXME
+
+Distributed under the Eclipse Public License, the same as Clojure.
