@@ -1,0 +1,45 @@
+http-kit
+(require '[http-kit :as http])
+(:require [org.httpkit.client :as http])
+exit
+(:require [org.httpkit.client :as http])
+(require 'org.httpkit.client)
+org.httpkit.client
+(require '[org.httpkit.client :as http])
+http
+(require '[org.httpkit.client :as http] :verbose)
+http
+exit
+(require '[org.httpkit.client :as http] :verbose)
+http
+(require '[org.httpkit.client :as http])
+http
+(require 'org.httpkit.client)
+org.httpkit.client
+(ns mymy (:require [org.httpkit.client :as http]))
+http
+(http)
+(ns mymy (:require [org.httpkit.client :as http]))
+http
+exit
+(in-ns 'chch.app)
+http
+route
+chch.app/route
+(in-ns 'chch.view.js)
+render-page
+exit
+(require '[org.httpkit.client :as http])
+http/get
+(http/get)
+(http/get "http://localhost:6969/main.js")
+(def r (http/get "http://localhost:6969/main.js"))
+r
+(http/get "http://localhost:6969/main.js" {})
+(http/get "http://localhost:6969/main.js" {} (fn [{:keys [body]}] (println body))
+(http/get "http://localhost:6969/main.js" {} (fn [{:keys [body]}] (println body)))
+(http/get "http://localhost:6969/main.js" {} (fn [{:keys [body]}] (println (str "snthsnthsn "body))))
+@(http/get "http://localhost:6969/main.js")
+(:body @(http/get "http://localhost:6969/main.js"))
+(:body @(http/get "http://localhost:6969/main.js" {:as :text}))
+exit
