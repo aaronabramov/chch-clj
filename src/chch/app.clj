@@ -17,33 +17,18 @@
 (require '[chch.view.js :refer [js-routes]])
 
 ;;; Load public routes
-(require '[chch.view.home :refer [home-routes]]
-         '[chch.view.about :refer [about-routes]])
-
-;;; Load registration and authentication routes
-(require '[chch.view.auth :refer [auth-routes]])
-
-;;; Load generic routes
-(require '[chch.view.profile :refer [profile-routes]]
-         '[chch.view.settings :refer [settings-routes]]
-         '[chch.view.admin :refer [admin-routes]])
+(require '[chch.view.home :refer [home-routes]])
 
 ;;; Load website routes
 ;; Add your routes here
-
 
 ;; Ring handler definition
 (defroutes site-handler
   (-> (routes js-routes
               home-routes
-              about-routes
-              auth-routes
-              profile-routes
-              settings-routes
-              admin-routes
               (route/resources "/")
               (route/not-found "<h1>Page not found.</h1>"))
-      (session-manager/wrap-session)
-      (context-manager/wrap-context-root)
+      ;; (session-manager/wrap-session)
+      ;; (context-manager/wrap-context-root)
       (wrap-reload)
       (handler/site)))
